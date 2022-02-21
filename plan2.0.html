@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANS</title>
+    <link rel="stylesheet" href="plan.css">
+    
+    <script src="https://kit.fontawesome.com/afc6efae80.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="head">
+    <nav>
+        <a href="Xaphrone.html" class="title"><span>X</span>aphrone</a>
+         <div class="navlink" id="navlinks">
+             <a href="javascript:void(0)" class="close" onclick="hidemenu()">&times;</a>
+            <a href="Xaph2.0.html">HOME</a>
+            <a href="plan2.0.html">PLANS</a>
+            <a href="reg2.0.html">REGISTRATION</a>
+            <a href="con2.0.html">CONTACT-US</a>
+         </div>
+         <i class="fas fa-bars" onclick="showmenu()"></i>
+     </nav>
+     <div class="intro">
+        <h1>Plans</h1>
+        <h5>To select a plan send a message to us though the contact us page. <br> Also feel free to contact-us for more explanation or clarification regarding any of these plans </h5>        
+     </div>
+     <div class="one">
+    <div class="plan">
+        <h3>Xaph Cashgrab</h3>
+        <P>This is a unique feature that runs for 30 days. <br>
+             It basically allows people make as much money as possible within a scheduled period of 30 days with an invesment of N200 only. <br>
+            
+        </P>
+    </div>
+    <div class="plan">
+        <h3>Withdrawal in Crypto</h3>
+        <P>Cash saved or earned which is over a certain amount can be withdrawn from Xaph Bank Accounts in any cryptocurrency of choice. <br>
+            
+        </P>
+    </div>
+    <div class="plan">
+        <h3>PYRAMIDAL FORTUNE BUILDER</h3>
+        <P>This is a referral based scheme in which people begin from the basic account with the aim of climbing to the Premium Star Account. <br></P>
+    </div>
+ 
+</div>
+
+
+
+
+
+<div class="one">
+    
+
+    <div class="plan">
+        <h3>Time Interest Earning </h3>
+        <P>This enables people accrue interest on money saved in Xaph Bank. Money can be kept for a period of 3 months to 10 years.</P>
+    </div>
+    
+    <div class="plan">
+        <h3 >Digital Trade Earning or ITrade4U</h3>
+        <P>This is a platform where people invest funds which will be traded in the stock market by our trained professionals.  </P>
+    </div>
+ 
+</div>
+</section>
+
+
+
+
+<!-------Javascript for toggle menu------------>
+
+<script>
+    function showmenu() {
+   document.getElementById("navlinks").style.width = "450px";
+ }
+ function hidemenu(){
+ document.getElementById("navlinks").style.width = "0";
+ }
+ 
+ </script>
+
+
+
+
+
+
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    }
+.head{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(4,9,30,0.7)),url();
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    color: white;
+    width: 150px;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.title span{
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.navlink{
+    flex: 1;
+    text-align: right;
+}
+.navlink a{
+    
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlink a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid #f44336;
+    background:#f44336;
+    transition: 1s;
+}
+nav .fas{
+    display: none;
+}
+
+@media (max-width:700px){
+    .one h3{
+        font-size: 20px;
+    }
+    .navlink{
+      position: fixed;
+      background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();
+      height: 100%;
+      width: 0;
+      top: 0;
+      right: -200px;
+      overflow-x: hidden;
+      text-align: left;
+      z-index: 1;
+      transition: 1.5s;
+  }
+  .navlink a{
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+  }
+  nav .fas{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  .navlink a:hover{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();   
+  }
+  .navlink .show{
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+  }
+  @media screen and (max-height: 450px){
+      .navlink{padding-top: 15px;}
+      .navlink a{font-size: 18px;}
+      
+  }
+.plan{
+    width: 80%;
+    color: black;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.one{
+     
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.plan{
+    flex-basis: 31%;
+    background: rgba(231, 231, 231, 0.288);
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 20px 12;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h5{
+    padding-top: 15px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.plan:hover{
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0,0.2);
+}
+@media(max-width: 700px){
+    .one{
+        flex-direction: column;
+    }
+    .intro{
+        padding-top: 45px;
+        width: 80%;
+        padding-left: 30px;
+    }
+    .intro h5{
+        font-size: 14px;
+    }
+}
+
+</style>
+
+</body>
+</html>

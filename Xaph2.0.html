@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xaphrone</title>
+    <link rel="stylesheet" href="xaphrone.css">
+    <script src="https://kit.fontawesome.com/afc6efae80.js" crossorigin="anonymous"></script>
+
+    <body>
+        <section class="head">
+            <nav>
+                <a href="Xaphrone.html" class="title"><span>X</span>aphrone</a>
+                 <div class="navlink" id="navlinks">
+                     <a href="javascript:void(0)" class="close" onclick="hidemenu()">&times;</a>
+                    <a href="Xaph2.0.html">HOME</a>
+                    <a href="plan2.0.html">PLANS</a>
+                    <a href="reg2.0.html">REGISTRATION</a>
+                    <a href="con2.0.html">CONTACT-US</a>
+                 </div>
+                 <i class="fas fa-bars" onclick="showmenu()"></i>
+             </nav>
+                
+             <div class="textbox">
+                 <h1>XAPHRONE INC.</h1>
+                <p><span>X</span>aprone is an online blockchain copmpany designed to meet your needs <br>We have a variety of plans for you to choose from <br>
+                    If you're the type of person that likes to work without referalls, we have you in mind <br>
+                    But if you are okay with referrals and would like to make the extra cash you are also welcome <br>
+                    <br>Just click on the link below to get started
+                </p>
+                 <a href="plan.html" class="btn">click to know more</a>
+             </div>
+        </section>
+    
+    
+    
+    
+    <section class="plans">
+    <h1>First view of our plans</h1>
+    <p> Xaphrone Digital Earner is a subsidiary of Xaphrone Incorporated. <br> It is a Digital Investment platform <br>
+        Xaphrone is a unique opportunity created to allow people earn millions from the convenience of their homes. <br>
+         Xaphrone incorporate multiple attractive and lucrative features into one banking platform <br>
+       Xaphrone being a digital platform has no physical presence but has multiple accounts in various banks aimed at satisfying each feature.</p>
+       
+    </div>
+    </section>
+    
+    
+    <!----------contact page----------->
+    
+    
+    <section class="cus">
+        <h1>Feel free to reach out to us for more clarification</h1> 
+        <a href="contact-us.html" class="btn_cus">Contact us</a>
+    </section>
+    
+    <!--------------THE TEAM------------------>
+    
+    <!----<section class="team">
+        <h1>THE TEAM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, quidem dolor, praesentium laboriosam quos ipsum voluptatibus saepe consectetur commodi impedit ullam deserunt? Porro animi, doloribus voluptate ipsa fugit voluptatibus. Repellendus?</p>
+        
+        <div class="row">
+            <div class="first-col">
+                <img src="image/westliam.jpg" alt="">
+                <div class="layer">
+                    <h3>C.E.O</h3>
+                </div>
+            </div>
+            <div class="first-col">
+                <img src="image/westliam.jpg" alt="">
+                <div class="layer">
+                    <h3>C.O.O</h3>
+                </div>
+            </div>
+            <div class="first-col">
+                <img src="image/westliam.jpg" alt="">
+                <div class="layer">
+                    <h3>C.E.O</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    -
+    <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe amet quas ut! Ad, error ullam, autem asperiores nemo possimus, modi dolores consequuntur iusto assumenda alias quo amet quibusdam minus libero.</p>
+    </section>
+    
+    
+    <!-----Javascript for toggle menu------------>
+    
+    <!-----<script>
+        var navlinks= document.getElementById("navlinks");
+        function showmenu() {
+            navlinks.style.right="0";
+        }
+        function hidemenu() {
+            navlinks.style.right="-200px";
+        }
+    </script>---->
+    
+    <script>
+       function showmenu() {
+      document.getElementById("navlinks").style.width = "450px";
+    }
+    function hidemenu(){
+    document.getElementById("navlinks").style.width = "0";
+    }
+    
+    </script>
+
+
+<style>
+ * {
+    padding: 0;
+    margin: 0;
+    }
+.head{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(4,9,30,0.7)),url();
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    color: white;
+    width: 150px;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.title span{
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.navlink{
+    flex: 1;
+    text-align: right;
+}
+.navlink a{
+    
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlink a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.textbox{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+}.textbox h1{
+    font-size: 52px;
+
+}
+.textbox p{
+font-size: 14px;
+color: white;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid #333232;
+    background:rgb(93, 105, 133);
+    transition: 1s;
+}
+
+nav .fas{
+    display: none;
+}
+@media (max-width:700px){
+    .textbox h1{
+        font-size: 20px;
+    }
+    .navlink{
+      position: fixed;
+      background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();
+      height: 100%;
+      width: 0;
+      top: 0;
+      right: -200px;
+      overflow-x: hidden;
+      text-align: left;
+      z-index: 1;
+      transition: 1.5s;
+  }
+  .navlink a{
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+  }
+  nav .fas{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  .navlink a:hover{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();   
+  }
+  .navlink .show{
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+  }
+  @media screen and (max-height: 450px){
+      .navlink{padding-top: 15px;}
+      .navlink a{font-size: 18px;}
+      
+  }
+/*--------plans--------*/
+.plans{
+    width: 60%;
+    margin: auto;
+    text-align:center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 52px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+.one{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.plan{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 20px 12;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.plan:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0,0.2);
+}
+@media(max-width: 700px){
+    .one{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/*----------contact page-----------*/
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid rgb(93, 105, 133);
+    background:rgb(93, 105, 133);
+    transition: 1s;
+}
+.cus{
+    margin: 100px auto;
+    width: 95%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/customer.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cus h1{
+    margin-bottom: 40px;
+    padding: 0;
+    color: #fff;
+}
+.btn_cus{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn_cus:hover{
+    border: 1px solid #030303;
+    background: rgb(93, 105, 133);
+    transition: 1s;
+}
+
+
+
+
+
+/*-----------team----------*/
+.team{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.first-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.first-col img{
+    display: block;
+    width: 100%;
+    width: 50;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.9s;
+}
+.layer:hover{
+    background:rgb(226, 0, 0,0.7); 
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.second-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.second-col img{
+    display: block;
+    width: 30%;
+}
+
+.third-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.third-col img{
+    display: block;
+    width: 30%;
+}
+
+
+
+/*----------footer-----------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 300px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+</style>
+ </body>
+</html>
