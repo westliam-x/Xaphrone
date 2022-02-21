@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registaration Form</title>
+    <script src="https://kit.fontawesome.com/afc6efae80.js" crossorigin="anonymous"></script>
+    </head>
+       
+    <body>
+        <nav>
+            <a href="index.html" class="title"><span>X</span>aphrone</a>
+             <div class="navlink" id="navlinks">
+                 <a href="javascript:void(0)" class="close" onclick="hidemenu()">&times;</a>
+                <a href="index.html">HOME</a>
+                <a href="plan2.0.html">PLANS</a>
+                <a href="reg2.0.html">REGISTRATION</a>
+                <a href="con2.0.html">CONTACT-US</a>
+             </div>
+             <i class="fas fa-bars" onclick="showmenu()"></i>
+         </nav>
+         <div class="registration">
+            <h1>Registaration Form</h1><br>
+            <section>
+                
+                   <div class="reg">
+                       <form action="reg.php" method="post">
+                           <input type="text" Firstname="First_Name" placeholder="Enter your first name" required>
+                           <input type="text" name="Last_Name" placeholder="Enter your last name" required>
+                           <input type="text" name="Username" placeholder="Enter your username" required>
+                           <input type="email" name="email" placeholder="Enter your email" id="" required>
+                           <input type="number" name="number" placeholder="Type in your phone number" maxlength="11" required>
+                           <textarea name="Address" id="" rows="8" placeholder="Enter your Address"></textarea>
+                           <input type="text" name="country" placeholder="What Country are you from?..." required>
+                           <input type="text" name="State" placeholder="What State are you from?..."><br>
+                           <button type="submit" class="btn_cus">SEND</button>
+                       </form>
+                   </div>
+            </section>
+         </div>
+
+<style>
+    * {
+padding: 0;
+margin: 0;
+
+}
+body{
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgb(0, 0, 0),rgba(4,9,30,0.7)),url();
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.main{
+padding-left: 200px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    color: white;
+    width: 150px;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.title span{
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.navlink{
+    flex: 1;
+    text-align: right;
+}
+.navlink a{
+    
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlink a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+@media (max-width:700px){
+    .navlink{
+      position: fixed;
+      background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();
+      height: 100%;
+      width: 0;
+      top: 0;
+      right: -200px;
+      overflow-x: hidden;
+      text-align: left;
+      z-index: 1;
+      transition: 1.5s;
+  }
+  .navlink a{
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+  }
+  nav .fas{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  .navlink a:hover{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();   
+  }
+  .navlink .show{
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+  }
+  @media screen and (max-height: 450px){
+      .navlink{padding-top: 15px;}
+      .navlink a{font-size: 18px;}
+      
+  }
+.reg{
+flex-basis: 48%;
+margin-bottom: 30px;
+}
+.reg div{
+display: flex;
+align-items: center;
+margin-bottom: 40px;
+}
+.registration{
+    padding-top: 40px;
+    width: 80%;
+ text-align: justify;
+ padding-left: 20%;
+ padding-right: 20px;
+}
+.registration h1{
+ color: white;
+}
+
+.reg input, .reg textarea{
+width: 80%;
+padding: 15px;
+margin-bottom: 17px;
+outline: none;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+.btn_cus{
+display: inline-block;
+text-decoration: none;
+color: black;
+border: 1px solid rgb(0, 0, 0);
+padding: 12px 34px;
+font-size: 13px;
+background: transparent;
+position: relative;
+cursor: pointer;
+}
+.btn_cus:hover{
+border: 1px solid #030303;
+background: rgb(93, 105, 133);
+transition: 1s;
+}
+@media(max-width:700px){
+ .registration{
+     padding-right: 10px;
+ }
+}
+
+</style>
+<script>
+    function showmenu() {
+   document.getElementById("navlinks").style.width = "450px";
+ }
+ function hidemenu(){
+ document.getElementById("navlinks").style.width = "0";
+ }
+ 
+ </script>
+
+
+
+
+     </body>
+ 
+
+
+
+    
+
+</html>
